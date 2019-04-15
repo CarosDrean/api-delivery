@@ -7,7 +7,7 @@ export default {
             return await Product.findById(_id).exec()
         },
         products: async() => {
-            const products = await Product.find().populate().exec()
+            const products = await Product.find() // analizar esto populate
             return products
         }
     },
